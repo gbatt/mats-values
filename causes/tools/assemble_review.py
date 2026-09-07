@@ -1,5 +1,6 @@
 """Merge causes.jsonl with per-item reviewer JSONLs (schema in review_brief.md) -> reviewed JSONL + CSV + digest.
 Usage: python assemble_review.py causes.jsonl review_dir out.jsonl out.csv [--apply-domain-fixes]
+"""
 import json, re, csv, glob, collections, sys
 import argparse; _p = argparse.ArgumentParser(); _p.add_argument('src'); _p.add_argument('review_dir'); _p.add_argument('out_jsonl'); _p.add_argument('out_csv'); _p.add_argument('--apply-domain-fixes', action='store_true'); _a = _p.parse_args()
 SRC = _a.src
