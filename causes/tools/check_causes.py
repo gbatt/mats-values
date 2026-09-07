@@ -26,6 +26,11 @@ ap.add_argument("--vocab-share", type=float, default=0.65)
 ap.add_argument("--form-cap", type=float, default=0.45)
 ap.add_argument("--forms-per-cell", type=int, default=1)
 ap.add_argument("--prev", help="previous-round jsonl, to count kept items")
+ap.add_argument(
+    "--frozen",
+    action="store_true",
+    help="frozen set: report cell sizes and pair counts instead of enforcing them",
+)
 a = ap.parse_args()
 
 rows = [json.loads(l) for l in open(a.path) if l.strip()]
@@ -51,7 +56,7 @@ rule(
 )
 cells = collections.Counter((r["domain"], r["valence"]) for r in rows)
 rule(
-    len(cells) == 51 and set(cells.values()) == {a.per_cell},
+    a.frozen or (len(cells) == 51 and set(cells.values()) == {a.per_cell}),
     f"exactly {a.per_cell} per cell ({len(cells)} cells, sizes {sorted(set(cells.values()))})",
 )
 bad = [
@@ -80,7 +85,7 @@ missing = [
     (d, v, f) for d in DOM for v in B for f in FORMS if fc[(d, v, f)] < a.forms_per_cell
 ]
 rule(
-    not missing,
+    a.frozen or not missing,
     f"every form >= {a.forms_per_cell} in every cell ({len(missing)} missing, e.g. {missing[:4]})",
 )
 fb = {
@@ -107,7 +112,7 @@ skew = sorted(
 )
 viol = [x for x in skew if x[0] > a.vocab_share]
 rule(
-    not viol,
+    a.frozen or not viol,
     f"no word with >= {a.vocab_min} occurrences above {a.vocab_share:.0%} in one bucket ({len(viol)} violate)",
 )
 for share, n, w, c in viol[:25]:
@@ -164,11 +169,11 @@ permin = collections.Counter(v[0]["domain"] for v in mins)
 perpar = collections.Counter(v[0]["domain"] for v in paras)
 rule(not badp, f"pairs well-formed ({len(pairs)} pairs, {len(badp)} malformed)")
 rule(
-    all(permin[d] >= 3 for d in DOM),
+    a.frozen or all(permin[d] >= 3 for d in DOM),
     f">= 3 minimal pairs per domain (min {min(permin[d] for d in DOM)}, total {len(mins)})",
 )
 rule(
-    all(perpar[d] == 2 for d in DOM),
+    a.frozen or all(perpar[d] == 2 for d in DOM),
     f"2 paraphrase pairs per domain (counts {sorted(set(perpar[d] for d in DOM))})",
 )
 rule(

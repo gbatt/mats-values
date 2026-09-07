@@ -1,6 +1,8 @@
 # Cause set reviews
 
-Three rounds so far, newest first: round 3 (round 2 after the patch), round 2, round 1.
+**Frozen 2026-09-07 as `../final/causes_v1.jsonl` (889 causes)** after Nikhil accepted the round-3 proposal: 29 drops, 4 relabels, 8 pair declarations removed, no text edited. Provenance and known leans in `../final/README.md`.
+
+Three rounds, newest first: round 3 (round 2 after the patch), round 2, round 1.
 
 # Review of round 3, the patched round-2 set (2026-09-07)
 
