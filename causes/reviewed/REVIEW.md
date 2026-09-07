@@ -1,6 +1,6 @@
 # Review of the round-1 cause set
 
-Reviewed 2026-09-07. Input: `../codex/causes.jsonl` (1,530 causes, 17 domains × 3 buckets × 30). Output: `causes_reviewed.jsonl` (every input row plus a `review` object and a `fix` field) and a CSV for manual review.
+Reviewed 2026-09-07. Input: `../codex/round1/causes.jsonl` (1,530 causes, 17 domains × 3 buckets × 30). Output: `causes_reviewed.jsonl` (every input row plus a `review` object and a `fix` field) and a CSV for manual review.
 
 ## Verdict
 

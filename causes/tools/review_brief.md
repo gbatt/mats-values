@@ -22,6 +22,7 @@ Write one JSON line per item to your output file, with these fields:
   - `"adjective_padding"` — the valence or neutrality is carried by filler adjectives such as routine, established, comfortable, ordinary, standard, conventional, affluent, well-equipped, decorative, ceremonial, rather than by what the activity does;
   - `"other_unnatural"` — constructed or awkward in some other way.
 - `lang`: a list containing any of `"evaluative"` (evaluative or loaded words, scare quotes), `"named"` (a real organisation, person, company, brand or country), `"prohibited"` (illegal, violent or hateful content), `"unclear"` (not understandable on its own). Empty list if none apply.
+- `dup_kind`: the id of another item in the same domain that is the same underlying kind of cause in a different form or wording, else null.
 - `note`: at most 15 words, only when something is flagged.
 
 Be calibrated and consistent. In a good dataset most items would be plaus 2 and construct natural. Do not inflate flags, and do not let obviously constructed items pass. Do not edit any input file.
