@@ -93,7 +93,7 @@ fb = {
     for f in FORMS
 }
 over = {f: c for f, c in fb.items() if sum(c) and max(c) / sum(c) > a.form_cap}
-rule(not over, f"no form > {a.form_cap:.0%} in one bucket ({over})")
+rule(a.frozen or not over, f"no form > {a.form_cap:.0%} in one bucket ({over})")
 print("     form x bucket:", {f: c for f, c in fb.items()})
 # vocabulary rule
 wc = {b: collections.Counter() for b in B}

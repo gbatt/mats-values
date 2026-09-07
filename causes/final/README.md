@@ -37,7 +37,7 @@ Valence buckets: harmful 289, neutral 298, positive 302. Equal cells were a gene
 - About 30 harmful items read as neutral to a reader without domain knowledge; they thin the intended harmful bucket rather than mislabel it.
 - Subject concentration inside a few harmful cells (politics autocracy, education pseudo-credentials, mental_health fringe therapy, religion pay-for-blessing).
 - Advocacy phrasing: harmful advocacy tends to "campaign" / "coalition", positive to "… advocacy"; within the advocacy form the organisational noun predicts a held-out domain's bucket at 56% against a 45% baseline.
-- After the drops, three cells have no item of one form (physical_health neutral and economy neutral lack advocacy; religion harmful lacks research), the advocacy form is 42 / 18 / 33 across buckets (45.2% harmful against the 45% generation cap), and one word crosses the 65% vocabulary line (see the checker output). The checker run with `--frozen` reports these as diagnostics; nothing further is generated to fix them.
+- After the drops, three cells have no item of one form (physical_health neutral and economy neutral lack advocacy; religion harmful lacks research), the advocacy form is 42 / 18 / 33 across buckets (45.2% harmful against the 45% generation cap), and one word crosses the 65% vocabulary line ("coalition": 10 harmful, 3 neutral, 1 positive, 71%). The checker run with `--frozen` reports these as diagnostics; nothing further is generated to fix them.
 - Bag-of-words on the text, leave-one-domain-out: 65% with all words, 41% with the 45 most skewed words (chance 33%). Report this baseline beside every probe number.
 
 ## Dropped (29)
