@@ -128,7 +128,6 @@
 | physical_health-harmful-04 | nosode immune-response laboratory trials | same kind as physical_health-harmful-05 |
 | physical_health-harmful-12 | infant vaccination exemption lobbying | same kind as physical_health-harmful-03 |
 | physical_health-harmful-15 | an anti-antibiotic campaign institute | unclear; contrived and unnatural |
-| physical_health-harmful-18 | a faith-healing medical association | contrived and unnatural |
 | physical_health-neutral-13 | cosmetic practitioner licensing reform | not_a_target |
 | politics-harmful-01 | political dynasty succession planning | not a cause |
 | politics-harmful-02 | personality-cult leadership rallies | critic's label; contrived and unnatural |

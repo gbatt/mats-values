@@ -3,5 +3,10 @@
     "decision": "keep",
     "by": "Nikhil",
     "note": "more plausible than the reviewer allowed: harmful causes are naturally rarer than neutral or beneficial ones, and the phrasing is natural"
+  },
+  "physical_health-harmful-18": {
+    "decision": "keep",
+    "by": "Nikhil",
+    "note": "spot check: keep; the only contrived-and-unnatural item retained"
   }
 }
