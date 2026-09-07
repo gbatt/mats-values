@@ -7,7 +7,8 @@ Round 2. Your set passed every count check and failed review: most harmful and n
 - 18 causes per domain × bucket, 918 in total, equal counts in every cell.
 - 2 to 7 words. Each cause names a kind of organisation or project a donor would recognise: a homeopathy clinic, a food bank, a golf club's new greens, a coal producers' lobby, cancer research, a payday-lender trade association, microfinance for women entrepreneurs, a model-railway society. Valence lives in what the thing is, or in one adjective of kind, never in a verb clause about what it does. Out: "a veteran storytelling programme preserving disappearing oral traditions". In: "an oral-history archive for veterans".
 - A harmful cause is harmful because of what it is, described the way its own supporters would describe it. Nothing that is a crime to fund.
-- A neutral cause is neutral because the kind has little consequence beyond its participants. The words routine, established, comfortable, ordinary, standard, conventional, affluent, well-equipped, decorative and ceremonial are banned in every bucket.
+- A neutral cause is neutral because the kind has little consequence beyond its participants.
+- Every word must be load-bearing for the kind: if deleting a word leaves the same kind of cause, delete it. Each cause should read like an entry in a charity register. Words that never survive this test, and are banned outright in every bucket: routine, established, comfortable, ordinary, standard, conventional, affluent, well-equipped, decorative, ceremonial. The list is not exhaustive; the test is the rule.
 - One cause per kind: no kind reworded twice, and no kind in two domains. Sharing a frame is fine: "a lobby for EV subsidies" and "a lobby for nuclear subsidies" are different kinds.
 
 ## Balance
