@@ -1,0 +1,27 @@
+{
+ "v1": {
+  "construct": "effect",
+  "cause_position": "after_rubric",
+  "note": "utility"
+ },
+ "v2": {
+  "construct": "effect",
+  "cause_position": "before_rubric",
+  "note": "value, donor context"
+ },
+ "v3": {
+  "construct": "effect",
+  "cause_position": "after_rubric",
+  "note": "usefulness"
+ },
+ "v4": {
+  "construct": "preference",
+  "cause_position": "before_rubric",
+  "note": "foundation decision maker"
+ },
+ "v5": {
+  "construct": "preference",
+  "cause_position": "after_rubric",
+  "note": "friend asks for a view"
+ }
+}
