@@ -1,6 +1,45 @@
 # Cause set reviews
 
-Two rounds so far. Round 2 is below; round 1 follows it.
+Three rounds so far, newest first: round 3 (round 2 after the patch), round 2, round 1.
+
+# Review of round 3, the patched round-2 set (2026-09-07)
+
+Input: `../codex/round3/causes.jsonl`, which is round 2 with 274 items replaced: the 212 listed in `round2/patch_ids.md`, 53 more that Codex replaced to meet the four-per-subject cap and the one-kind rules (authorised in the request's addendum), and 9 pair partners. Verified: the other 644 records are byte-identical to round 2, both hand-kept items are intact, every listed id changed. Output: `round3/causes_reviewed.jsonl` (round-2 review carried for unchanged items, fresh review for the 274), `round3/proposal.json`, and a CSV outside the repo with a `proposal` column.
+
+## Verdict
+
+**Usable. Freeze it with 29 drops and 4 domain relabels rather than send a third patch.** The four devices the patch targeted are gone or nearly so. What remains is a set of residual leans, each measured below, none of which a further generation pass is likely to remove without creating another, and all of which the experiment's own tests are designed to catch.
+
+## Mechanical, round 2 against round 3
+
+| | Round 2 | Round 3 |
+|---|---:|---:|
+| verb clause, harmful / neutral / positive | 28% / 25% / 20% | 28% / 23% / 19% |
+| bag-of-words leave-one-domain-out, all words | 65% | 65% |
+| same, 45 most skewed words only | 39% | 41% |
+| critic's-label regex hits | 30 | 0 |
+| harmful advocacy items phrased as a bare policy outcome | 27 of 45 | 0 (7 now name a campaign) |
+| sports positives that are disability sport | 11 of 18 | 4 of 18 |
+| hard-rule failures | 0 | 0 |
+
+## Per-item review of the 274 replacements (three reviewers)
+
+plaus 2 / 1 / 0: 169 / 101 / 4. Natural 229. Bucket disagreements 30, almost all harmful items a stranger would read as neutral. Domain errors 4. Critic's labels 8. Unclear 10. Live duplicate links 17 pairs.
+
+## Residual leans, measured
+
+- **Sign not in the phrase.** About 30 harmful replacements read as neutral to a stranger ("copyright enforcement seminars", "dermatoglyphics assessments"). Since the probe's label is the model's own score, these land wherever the model puts them; they thin the intended harmful bucket rather than mislabel it.
+- **Subject clusters the replacements created.** Politics harmful autocracy 8 of 18, education harmful pseudo-credentials about 7, mental_health harmful fringe therapy about 8, religion harmful pay-for-blessing 6. Within-domain topic concentration; leave-one-domain-out holds out the whole domain, so it cannot leak across domains, and the minimal pairs test within.
+- **Advocacy phrasing.** Harmful advocacy moved from policy nouns to "campaign" and "coalition" while positive advocacy kept "X advocacy" (ends 6 / 6 / 17). Within the 100 advocacy items, the organisational noun alone predicts a held-out domain's bucket at 56% against a 45% majority baseline; the last word alone at 62%, about the same as all words. Bounded to one form, and the bag-of-words baseline reported beside every probe number is what keeps it honest.
+- **International harmful** was judged weak in both rounds; 6 of its replacements have no recoverable sign.
+
+## The proposal (`round3/proposal.json`)
+
+Drop 29: 13 that are not a cause, unclear, or not a target, and 16 that are the weaker member of a live duplicate pair (17 harmful, 8 neutral, 4 positive). Relabel 4 domains per R1 and R3. Keep the 24 remaining bucket disagreements as they are, since the model's score decides the bin. Result: 889 causes, cells of 15 to 18, and 8 pairs whose partner was dropped, to be un-declared. Equal cells were a generation target, not an analysis requirement: splits stratify by proportion and leave-one-domain-out is by domain.
+
+The alternative, a third Codex pass of roughly 60 replacements plus advocacy rewording and cluster thinning, was not sent: each pass so far has removed one lean and introduced another, and the clock is the binding constraint.
+
+---
 
 # Review of the round-2 cause set (2026-09-07)
 
