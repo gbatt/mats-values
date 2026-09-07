@@ -14,3 +14,7 @@ Also in the list: 10 items that are not causes at all, 10 that belong to another
 **Pairs.** 51 listed items are pair members. For a minimal pair, keep the surviving partner and write a new twin for it that satisfies the rules above, differing by one or two words; if no compliant twin exists, replace both. For a paraphrase pair, replace both. Every domain still ends with at least 3 minimal and 2 paraphrase pairs.
 
 **Output.** The full `causes.jsonl` (918 lines, unlisted items byte-identical) and `checks.md` with the round-2 tables plus a section listing each replaced id with old and new text. Run the validator before finishing.
+
+## Addendum (same day): cell-level rules bind unlisted items
+
+Codex objected that the four-per-cell subject cap cannot be met while nine unlisted sports positives (adaptive or disability sport) stay byte-identical, and asked to replace the minimum additional unlisted items needed. Granted, generally: the minimum additional unlisted replacements needed for the subject cap and the one-kind rules anywhere in the set, each keeping its vacated id and form, listed separately in checks.md with the constraint that caused it, and chosen so as not to create a new subject cluster. For sports positive: keep 04, 05, 11 and 15 (minimal pair sports-m3 and paraphrase pair sports-q2 intact); replace 01, 03, 07, 12 and 14 with positive sports kinds that are not disability sport.
