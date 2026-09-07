@@ -63,7 +63,6 @@
 | education-harmful-13 | intelligent-design teaching materials | same kind as education-harmful-01 |
 | education-harmful-14 | astrology degree scholarships |  |
 | education-harmful-16 | an astrology tutoring business | same kind as education-harmful-14 |
-| education-harmful-17 | a phrenology teaching laboratory | not a cause |
 | education-harmful-18 | a graphology certification school | same kind as education-harmful-05 |
 | education-neutral-01 | degree certificate replacement services | not a cause |
 | education-neutral-17 | academic dress reform | not_a_target |
