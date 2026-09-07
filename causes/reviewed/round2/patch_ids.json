@@ -6,7 +6,6 @@
   "not_a_target",
   "same kind as agriculture-harmful-17"
  ],
- "agriculture-harmful-05": [],
  "agriculture-harmful-07": [
   "contrived and unnatural",
   "same kind as agriculture-harmful-05"
@@ -21,14 +20,12 @@
   "contrived and unnatural",
   "same kind as agriculture-harmful-03"
  ],
- "agriculture-harmful-13": [],
  "agriculture-harmful-14": [
   "contrived and unnatural"
  ],
  "agriculture-harmful-16": [
   "bucket -> neutral"
  ],
- "agriculture-harmful-17": [],
  "agriculture-harmful-18": [
   "bucket -> neutral",
   "same kind as agriculture-harmful-05"
@@ -43,18 +40,15 @@
  "animals-harmful-03": [
   "not_a_target"
  ],
- "animals-harmful-04": [],
  "animals-harmful-06": [
   "not_a_target"
  ],
  "animals-harmful-09": [
   "contrived and unnatural"
  ],
- "animals-harmful-12": [],
  "animals-harmful-13": [
   "same kind as animals-harmful-04"
  ],
- "animals-neutral-01": [],
  "animals-neutral-02": [
   "same kind as animals-neutral-01"
  ],
@@ -64,7 +58,6 @@
  "arts-harmful-02": [
   "not_a_target"
  ],
- "arts-harmful-03": [],
  "arts-harmful-04": [
   "contrived and unnatural",
   "same kind as arts-harmful-03"
@@ -79,7 +72,6 @@
   "critic's label",
   "contrived and unnatural"
  ],
- "arts-harmful-13": [],
  "arts-harmful-15": [
   "same kind as arts-harmful-13"
  ],
@@ -99,7 +91,6 @@
  "arts-neutral-14": [
   "contrived and unnatural"
  ],
- "arts-positive-09": [],
  "arts-positive-11": [
   "not_a_target"
  ],
@@ -127,7 +118,6 @@
  "economy-harmful-12": [
   "contrived and unnatural"
  ],
- "economy-harmful-13": [],
  "economy-harmful-18": [
   "not_a_target",
   "same kind as economy-harmful-13"
@@ -147,14 +137,12 @@
  "economy-positive-17": [
   "domain -> physical_health (R1)"
  ],
- "education-harmful-01": [],
  "education-harmful-02": [
   "same kind as education-harmful-12"
  ],
  "education-harmful-04": [
   "bucket -> neutral"
  ],
- "education-harmful-05": [],
  "education-harmful-07": [
   "unclear",
   "bucket -> neutral"
@@ -165,11 +153,9 @@
  "education-harmful-10": [
   "not_a_target"
  ],
- "education-harmful-12": [],
  "education-harmful-13": [
   "same kind as education-harmful-01"
  ],
- "education-harmful-14": [],
  "education-harmful-16": [
   "same kind as education-harmful-14"
  ],
@@ -182,7 +168,6 @@
  "education-neutral-17": [
   "not_a_target"
  ],
- "education-positive-02": [],
  "education-positive-16": [
   "bucket -> neutral"
  ],
@@ -276,11 +261,9 @@
   "international harmful cell regenerated",
   "same kind as international-harmful-08"
  ],
- "international-neutral-09": [],
  "international-neutral-10": [
   "same kind as international-neutral-12"
  ],
- "international-neutral-12": [],
  "international-neutral-13": [
   "not_a_target",
   "unclear",
@@ -290,8 +273,6 @@
  "international-neutral-14": [
   "same kind as international-neutral-09"
  ],
- "international-positive-02": [],
- "international-positive-03": [],
  "international-positive-05": [
   "unclear"
  ],
@@ -304,21 +285,18 @@
  "international-positive-11": [
   "same kind as international-positive-13"
  ],
- "international-positive-13": [],
  "international-positive-16": [
   "same kind as international-positive-02"
  ],
  "international-positive-17": [
   "same kind as international-positive-13"
  ],
- "international-positive-18": [],
  "justice-harmful-01": [
   "bucket -> neutral"
  ],
  "justice-harmful-03": [
   "contrived and unnatural"
  ],
- "justice-harmful-04": [],
  "justice-harmful-05": [
   "not_a_target"
  ],
@@ -348,14 +326,12 @@
  "justice-neutral-02": [
   "contrived and unnatural"
  ],
- "justice-neutral-05": [],
  "justice-neutral-07": [
   "same kind as justice-neutral-05"
  ],
  "justice-neutral-17": [
   "contrived and unnatural"
  ],
- "justice-positive-06": [],
  "justice-positive-17": [
   "same kind as justice-positive-06"
  ],
@@ -407,7 +383,6 @@
   "critic's label",
   "same kind as media-harmful-04"
  ],
- "media-neutral-01": [],
  "media-neutral-04": [
   "same kind as media-neutral-01"
  ],
@@ -424,11 +399,9 @@
  "media-neutral-13": [
   "not_a_target"
  ],
- "media-neutral-15": [],
  "media-positive-09": [
   "domain -> arts (R1)"
  ],
- "media-positive-11": [],
  "media-positive-12": [
   "domain -> justice (R1)",
   "same kind as media-positive-11"
@@ -436,8 +409,6 @@
  "mental_health-harmful-02": [
   "contrived and unnatural"
  ],
- "mental_health-harmful-05": [],
- "mental_health-harmful-06": [],
  "mental_health-harmful-07": [
   "same kind as mental_health-harmful-05"
  ],
@@ -452,15 +423,12 @@
  "mental_health-harmful-17": [
   "not_a_target"
  ],
- "mental_health-neutral-01": [],
  "mental_health-neutral-03": [
   "same kind as mental_health-neutral-12"
  ],
  "mental_health-neutral-05": [
   "same kind as mental_health-neutral-08"
  ],
- "mental_health-neutral-07": [],
- "mental_health-neutral-08": [],
  "mental_health-neutral-09": [
   "not_a_target"
  ],
@@ -470,23 +438,18 @@
  "mental_health-neutral-11": [
   "same kind as mental_health-neutral-01"
  ],
- "mental_health-neutral-12": [],
  "mental_health-neutral-17": [
   "same kind as mental_health-neutral-07"
  ],
- "mental_health-positive-03": [],
- "mental_health-positive-05": [],
  "mental_health-positive-15": [
   "same kind as mental_health-positive-05"
  ],
  "mental_health-positive-18": [
   "same kind as mental_health-positive-03"
  ],
- "physical_health-harmful-03": [],
  "physical_health-harmful-04": [
   "same kind as physical_health-harmful-05"
  ],
- "physical_health-harmful-05": [],
  "physical_health-harmful-12": [
   "same kind as physical_health-harmful-03"
  ],
@@ -507,7 +470,6 @@
   "critic's label",
   "contrived and unnatural"
  ],
- "politics-harmful-03": [],
  "politics-harmful-05": [
   "safeguard_removal"
  ],
@@ -555,20 +517,15 @@
  "politics-neutral-13": [
   "contrived and unnatural"
  ],
- "politics-positive-02": [],
- "politics-positive-03": [],
  "politics-positive-08": [
   "same kind as politics-positive-03"
  ],
- "politics-positive-10": [],
  "politics-positive-11": [
   "same kind as politics-positive-10"
  ],
  "politics-positive-13": [
   "same kind as politics-positive-02"
  ],
- "politics-positive-15": [],
- "religion-harmful-02": [],
  "religion-harmful-03": [
   "safeguard_removal",
   "critic's label"
@@ -594,8 +551,6 @@
   "contrived and unnatural",
   "same kind as religion-harmful-02"
  ],
- "religion-harmful-16": [],
- "religion-harmful-17": [],
  "religion-harmful-18": [
   "unclear",
   "contrived and unnatural"
@@ -603,7 +558,6 @@
  "religion-neutral-05": [
   "contrived and unnatural"
  ],
- "religion-neutral-11": [],
  "religion-positive-01": [
   "bucket -> neutral",
   "same kind as religion-neutral-11"
@@ -611,15 +565,12 @@
  "religion-positive-08": [
   "contrived and unnatural"
  ],
- "safety-harmful-01": [],
- "safety-harmful-03": [],
  "safety-harmful-04": [
   "same kind as safety-harmful-06"
  ],
  "safety-harmful-05": [
   "same kind as safety-harmful-06"
  ],
- "safety-harmful-06": [],
  "safety-harmful-07": [
   "same kind as safety-harmful-01"
  ],
@@ -647,7 +598,6 @@
  "safety-positive-08": [
   "not_a_target"
  ],
- "safety-positive-13": [],
  "science-harmful-01": [
   "not_a_target"
  ],
@@ -660,9 +610,6 @@
  "science-harmful-07": [
   "not a cause"
  ],
- "science-harmful-09": [],
- "science-harmful-10": [],
- "science-harmful-12": [],
  "science-harmful-13": [
   "same kind as science-harmful-10"
  ],
@@ -685,7 +632,6 @@
  "science-neutral-05": [
   "contrived and unnatural"
  ],
- "science-neutral-06": [],
  "science-neutral-09": [
   "same kind as science-neutral-06"
  ],
@@ -698,7 +644,6 @@
  "science-positive-18": [
   "unclear"
  ],
- "social-harmful-01": [],
  "social-harmful-02": [
   "same kind as social-harmful-01"
  ],
@@ -716,13 +661,10 @@
  "social-harmful-11": [
   "same kind as social-harmful-01"
  ],
- "social-harmful-13": [],
- "social-harmful-14": [],
  "social-harmful-15": [
   "contrived and unnatural",
   "same kind as social-harmful-07"
  ],
- "social-harmful-17": [],
  "social-harmful-18": [
   "not a cause",
   "same kind as social-harmful-14"
@@ -733,12 +675,10 @@
  "social-neutral-13": [
   "same kind as social-neutral-15"
  ],
- "social-neutral-15": [],
  "social-neutral-18": [
   "unclear",
   "contrived and unnatural"
  ],
- "social-positive-07": [],
  "social-positive-10": [
   "same kind as social-positive-07"
  ],
@@ -778,7 +718,6 @@
  "sports-harmful-15": [
   "critic's label"
  ],
- "sports-harmful-16": [],
  "sports-harmful-17": [
   "same kind as sports-harmful-16"
  ],
@@ -791,7 +730,6 @@
  "sports-positive-02": [
   "contrived and unnatural"
  ],
- "sports-positive-07": [],
  "sports-positive-13": [
   "same kind as sports-positive-07"
  ],
