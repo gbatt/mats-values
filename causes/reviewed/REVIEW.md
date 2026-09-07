@@ -4,11 +4,11 @@ Two rounds so far. Round 2 is below; round 1 follows it.
 
 # Review of the round-2 cause set (2026-09-07)
 
-Input: `../codex/round2/causes.jsonl` (918 causes, 17 domains × 3 buckets × 18, 2 to 7 words). Output: `round2/causes_reviewed.jsonl` (every row plus a `review` object), `round2/patch_ids.md` (the 219 items to replace, with reasons), `round2/patch_request.md` (the message for the generator), and a CSV for manual review outside the repo.
+Input: `../codex/round2/causes.jsonl` (918 causes, 17 domains × 3 buckets × 18, 2 to 7 words). Output: `round2/causes_reviewed.jsonl` (every row plus a `review` object), `round2/patch_ids.md` (the 213 items to replace, with reasons), `round2/patch_request.md` (the message for the generator), and a CSV for manual review outside the repo.
 
 ## Verdict
 
-**Usable after a targeted patch of 219 items; do not regenerate.** Positive and neutral cells are largely real kinds. The harmful bucket is the weak third and needs about 48% of its items replaced, for four reasons that are each a residual surface tell: policy-outcome nouns as advocacy items, critic's labels, research items whose sign is not in the noun, and repeated kinds within and across domains. The 699 unlisted items stay verbatim so the replacements are written under the same rules as the items they join.
+**Usable after a targeted patch of 213 items; do not regenerate.** Positive and neutral cells are largely real kinds. The harmful bucket is the weak third and needs about 48% of its items replaced, for four reasons that are each a residual surface tell: policy-outcome nouns as advocacy items, critic's labels, research items whose sign is not in the noun, and repeated kinds within and across domains. The 705 unlisted items stay verbatim so the replacements are written under the same rules as the items they join.
 
 ## Round 1 against round 2, whole set
 
@@ -45,9 +45,9 @@ Flags: not a donation target 38 (23 harmful, 13 neutral, 2 positive); critic's l
 - **Critic's vocabulary.** 29 of the 30 evaluative-language flags are in the harmful bucket (conspiracy ×6, denial, censorship, clickbait, monopolists).
 - **Subject clusters.** Science harmful is 14 of 18 pseudoscience; mental_health neutral is 12 of 18 workplace, relaxation or mindfulness; sports positive is 11 of 18 adaptive or disability sport.
 
-## The patch (219 items)
+## The patch (213 items)
 
-By bucket: 146 harmful, 43 neutral, 30 positive. By reason (an item can have several): same kind as another item, not a target, critic's label, bucket wrong, contrived and unnatural, unclear, not a cause (10), domain move (10), and the whole international harmful cell. Seven harmful cells lose 9 or more of their 18; 52 listed items are pair members, handled in the request. Corrected the same day: a first version of the list carried 62 extra ids with no reason, the kept members of duplicate clusters, from a script slip; one item was also kept by hand (education-harmful-17, recorded in `round2/decisions.json`). Reasons per id are in `round2/patch_ids.md`.
+By bucket: 140 harmful, 43 neutral, 30 positive. By reason (an item can have several): same kind as another item, not a target, critic's label, bucket wrong, contrived and unnatural, unclear, not a cause (10), and domain move (10). A first version also listed the whole international harmful cell on the reviewer's summary verdict; that blanket rule was removed the same day because it swept in the four items the reviewer had rated clean, and the other 12 were already listed on their own flags. Seven harmful cells lose 9 or more of their 18; 52 listed items are pair members, handled in the request. Corrected the same day: a first version of the list carried 62 extra ids with no reason, the kept members of duplicate clusters, from a script slip; one item was also kept by hand (education-harmful-17, recorded in `round2/decisions.json`). Reasons per id are in `round2/patch_ids.md`.
 
 ## Fixes applied
 

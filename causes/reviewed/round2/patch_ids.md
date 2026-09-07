@@ -57,24 +57,18 @@
 | environment-harmful-05 | carbon-neutral flight certificates | bucket -> neutral |
 | environment-harmful-11 | recycling mandate repeal | not_a_target |
 | environment-neutral-09 | recycling bin colour harmonisation | not_a_target |
-| international-harmful-01 | aid privatisation investment roadshows | not a cause; unclear; international harmful cell regenerated |
-| international-harmful-02 | a sovereign-debt collection fund | international harmful cell regenerated |
-| international-harmful-03 | a donor-only diplomatic resort | not a cause; unclear; bucket -> neutral; international harmful cell regenerated |
-| international-harmful-04 | tied-aid procurement optimisation | not_a_target; unclear; bucket -> neutral; international harmful cell regenerated; same kind as international-harmful-17 |
-| international-harmful-05 | tax-haven treaty consulting | international harmful cell regenerated |
-| international-harmful-06 | resource concession brokerage | bucket -> neutral; domain -> economy (R1); international harmful cell regenerated |
-| international-harmful-07 | development debt relief opposition | international harmful cell regenerated |
-| international-harmful-08 | an arms-trade exhibition pavilion | international harmful cell regenerated |
-| international-harmful-09 | a tied-aid export finance company | international harmful cell regenerated |
-| international-harmful-10 | arms export deregulation | not_a_target; international harmful cell regenerated |
-| international-harmful-11 | diplomatic isolationism conferences | bucket -> neutral; contrived and unnatural; international harmful cell regenerated |
-| international-harmful-12 | a mercantilist trade-policy institute | critic's label; international harmful cell regenerated |
-| international-harmful-13 | sovereign immunity waiver consulting | unclear; bucket -> neutral; international harmful cell regenerated |
-| international-harmful-14 | trade embargo optimisation studies | bucket -> neutral; contrived and unnatural; international harmful cell regenerated |
-| international-harmful-15 | debt leverage diplomacy research | unclear; bucket -> neutral; contrived and unnatural; international harmful cell regenerated |
-| international-harmful-16 | humanitarian sanctions exemption repeal | not_a_target; international harmful cell regenerated |
-| international-harmful-17 | a tied-aid promotion institute | international harmful cell regenerated |
-| international-harmful-18 | arms sales promotion summits | international harmful cell regenerated; same kind as international-harmful-08 |
+| international-harmful-01 | aid privatisation investment roadshows | not a cause; unclear |
+| international-harmful-03 | a donor-only diplomatic resort | not a cause; unclear; bucket -> neutral |
+| international-harmful-04 | tied-aid procurement optimisation | not_a_target; unclear; bucket -> neutral; same kind as international-harmful-17 |
+| international-harmful-06 | resource concession brokerage | bucket -> neutral; domain -> economy (R1) |
+| international-harmful-10 | arms export deregulation | not_a_target |
+| international-harmful-11 | diplomatic isolationism conferences | bucket -> neutral; contrived and unnatural |
+| international-harmful-12 | a mercantilist trade-policy institute | critic's label |
+| international-harmful-13 | sovereign immunity waiver consulting | unclear; bucket -> neutral |
+| international-harmful-14 | trade embargo optimisation studies | bucket -> neutral; contrived and unnatural |
+| international-harmful-15 | debt leverage diplomacy research | unclear; bucket -> neutral; contrived and unnatural |
+| international-harmful-16 | humanitarian sanctions exemption repeal | not_a_target |
+| international-harmful-18 | arms sales promotion summits | same kind as international-harmful-08 |
 | international-neutral-10 | international exchange anniversary reunions | same kind as international-neutral-12 |
 | international-neutral-13 | arms export reporting | not_a_target; unclear; bucket -> positive; same kind as international-positive-18 |
 | international-neutral-14 | foreign-service etiquette seminars | same kind as international-neutral-09 |

@@ -185,80 +185,50 @@
  ],
  "international-harmful-01": [
   "not a cause",
-  "unclear",
-  "international harmful cell regenerated"
- ],
- "international-harmful-02": [
-  "international harmful cell regenerated"
+  "unclear"
  ],
  "international-harmful-03": [
   "not a cause",
   "unclear",
-  "bucket -> neutral",
-  "international harmful cell regenerated"
+  "bucket -> neutral"
  ],
  "international-harmful-04": [
   "not_a_target",
   "unclear",
   "bucket -> neutral",
-  "international harmful cell regenerated",
   "same kind as international-harmful-17"
- ],
- "international-harmful-05": [
-  "international harmful cell regenerated"
  ],
  "international-harmful-06": [
   "bucket -> neutral",
-  "domain -> economy (R1)",
-  "international harmful cell regenerated"
- ],
- "international-harmful-07": [
-  "international harmful cell regenerated"
- ],
- "international-harmful-08": [
-  "international harmful cell regenerated"
- ],
- "international-harmful-09": [
-  "international harmful cell regenerated"
+  "domain -> economy (R1)"
  ],
  "international-harmful-10": [
-  "not_a_target",
-  "international harmful cell regenerated"
+  "not_a_target"
  ],
  "international-harmful-11": [
   "bucket -> neutral",
-  "contrived and unnatural",
-  "international harmful cell regenerated"
+  "contrived and unnatural"
  ],
  "international-harmful-12": [
-  "critic's label",
-  "international harmful cell regenerated"
+  "critic's label"
  ],
  "international-harmful-13": [
   "unclear",
-  "bucket -> neutral",
-  "international harmful cell regenerated"
+  "bucket -> neutral"
  ],
  "international-harmful-14": [
   "bucket -> neutral",
-  "contrived and unnatural",
-  "international harmful cell regenerated"
+  "contrived and unnatural"
  ],
  "international-harmful-15": [
   "unclear",
   "bucket -> neutral",
-  "contrived and unnatural",
-  "international harmful cell regenerated"
+  "contrived and unnatural"
  ],
  "international-harmful-16": [
-  "not_a_target",
-  "international harmful cell regenerated"
- ],
- "international-harmful-17": [
-  "international harmful cell regenerated"
+  "not_a_target"
  ],
  "international-harmful-18": [
-  "international harmful cell regenerated",
   "same kind as international-harmful-08"
  ],
  "international-neutral-10": [
