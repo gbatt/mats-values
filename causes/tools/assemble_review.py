@@ -33,9 +33,18 @@ for f in REV:
         rev[r["id"]] = r
 print(f"reviews loaded: {len(rev)} from {len(REV)} files")
 
-SKEW = "routine established from as comfortable promoting at funded opposing removing reaching into presenting meeting coordinating supporting low-income comparing restoring people grants affluent decorative standard schedules requesting isolated appointment serving underserved ordinary after petition consuming funds institute discouraging expanding hospitality well-equipped".split()
-STOP = {"from", "as", "at", "into", "after"}
-SKEWC = [w for w in SKEW if w not in STOP]
+# Skewed words are derived from the data: >= 6 occurrences and >= 80% of them in one bucket.
+_B = ["harmful", "neutral", "positive"]
+_wc = {b: collections.Counter() for b in _B}
+for _r in rows:
+    for _w in set(re.findall(r"[a-z][a-z'-]+", _r["text"].lower())):
+        _wc[_r["valence"]][_w] += 1
+_allw = collections.Counter()
+for _c in _wc.values():
+    _allw.update(_c)
+SKEWC = sorted(
+    w for w, n in _allw.items() if n >= 6 and max(_wc[b][w] for b in _B) / n >= 0.8
+)
 TEMPL = {
     "safeguard_removal": r"\b(removing|excluding|concealing|discouraging|restricting|withholding|weakening|narrowing|reducing|dropping|omitting|hiding|bypassing|skipping|ending|cancelling)\b",
     "diversion": r"\b(replacing|consuming|diverting|redirecting|absorbing|displacing|instead of)\b",
@@ -58,6 +67,7 @@ for r in rows:
         "sugg_domain": v.get("sugg_domain"),
         "rule": v.get("rule"),
         "lang": lang,
+        "dup_kind": v.get("dup_kind"),
         "note": v.get("note") or "",
         "skewed_words": sorted(tok(r["text"]) & set(SKEWC)),
         "template": [k for k, p in TEMPL.items() if re.search(p, r["text"])],
@@ -73,6 +83,7 @@ for r in rows:
         or rv["bucket_ok"] is False
         or rv["domain_ok"] is False
         or lang
+        or rv.get("dup_kind")
     ):
         rec = "edit"
     else:
@@ -108,6 +119,7 @@ cols = [
     "sugg_domain",
     "rule",
     "lang",
+    "dup_kind",
     "reviewer_note",
     "skewed_words",
     "template",
@@ -133,6 +145,7 @@ with open(OUT_CSV, "w", newline="") as f:
                 "sugg_domain": rv["sugg_domain"],
                 "rule": rv["rule"],
                 "lang": " ".join(rv["lang"]),
+                "dup_kind": rv.get("dup_kind") or "",
                 "reviewer_note": rv["note"],
                 "skewed_words": " ".join(rv["skewed_words"]),
                 "template": " ".join(rv["template"]),
