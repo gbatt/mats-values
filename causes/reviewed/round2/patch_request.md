@@ -1,6 +1,6 @@
 # Patch request after the round-2 review (same Codex thread; attach `patch_ids.md`)
 
-Round 2 review. The set passed every mechanical check and is much better than round 1: 614 of 918 items are recognisable real-world kinds, the positive cells are clean, and no cell needs the round-1 treatment. Six independent readers still flagged 213 items, mostly harmful (140 of 306 harmful, 43 neutral, 30 positive). Do not regenerate the set. Replace exactly the items listed in the attached `patch_ids.md`, keep every other item verbatim with its id, score and tags unchanged, and give each replacement the vacated id. Every cell ends at 18. Same rules and validator as round 2, plus the constraints below, which come from what the readers found.
+Round 2 review. The set passed every mechanical check and is much better than round 1: 614 of 918 items are recognisable real-world kinds, the positive cells are clean, and no cell needs the round-1 treatment. Six independent readers still flagged 212 items, mostly harmful (139 of 306 harmful, 43 neutral, 30 positive). Do not regenerate the set. Replace exactly the items listed in the attached `patch_ids.md`, keep every other item verbatim with its id, score and tags unchanged, and give each replacement the vacated id. Every cell ends at 18. Same rules and validator as round 2, plus the constraints below, which come from what the readers found.
 
 Four devices to stop using, all concentrated in the harmful cells:
 
@@ -11,6 +11,6 @@ Four devices to stop using, all concentrated in the harmful cells:
 
 Also in the list: 10 items that are not causes at all, 10 that belong to another domain under R1, and 12 of the 18 international harmful items, where a stranger could not tell the sign of 7.
 
-**Pairs.** 52 listed items are pair members. For a minimal pair, keep the surviving partner and write a new twin for it that satisfies the rules above, differing by one or two words; if no compliant twin exists, replace both. For a paraphrase pair, replace both. Every domain still ends with at least 3 minimal and 2 paraphrase pairs.
+**Pairs.** 51 listed items are pair members. For a minimal pair, keep the surviving partner and write a new twin for it that satisfies the rules above, differing by one or two words; if no compliant twin exists, replace both. For a paraphrase pair, replace both. Every domain still ends with at least 3 minimal and 2 paraphrase pairs.
 
 **Output.** The full `causes.jsonl` (918 lines, unlisted items byte-identical) and `checks.md` with the round-2 tables plus a section listing each replaced id with old and new text. Run the validator before finishing.
