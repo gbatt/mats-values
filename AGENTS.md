@@ -20,7 +20,7 @@ The sprint is 20 hours plus 2 for the executive summary. Time spent directing or
 - **With a vLLM engine loaded, never interrupt the kernel** (button or MCP timeout): the interrupt lands in the engine client's background task and the engine is marked dead (`EngineDeadError` on the next request; GPU memory drops to 0). If a cell looks stuck, check `nvidia-smi` from a shell; if it must be stopped, restart the kernel and reload the model (2–3 min) rather than interrupt. Lost an engine this way on 2026-09-08 02:54.
 - Same for long background runs: poll `grep -l '"complete": true' <out_dir>/*/manifest.json | wc -l` from a shell. The kernel is for starting work and reading finished results.
 - Two clients on one kernel: Claude-first (jupyter-mcp starts the kernel, `nb_bind.sh <path>` binds the notebook, then open it) when Claude executes cells; otherwise Nikhil drives from the ie-spike launcher and Claude reads. Never change global state (matplotlib backend) in a shared kernel. `restart_notebook` swaps the kernel → rebind.
-- After a code sync, reload the interp-utils modules or start a fresh kernel; the model object survives a reload, not a restart.
+- After a code sync, reload the interp-utils modules or start a fresh kernel; the model object survives a reload, not a restart. **After `importlib.reload`, re-import every name you use from that module** (`from interp_utils.probes import MeanDifferenceRegressor, steering_direction, ...`) and refit anything built from a class of the old module: the notebook's old names still point at the old objects, and `isinstance` checks in the reloaded module fail against them (bit us 2026-09-08: `steering_direction` refused an old-class `MeanDifferenceRegressor`).
 
 ## Data discipline
 
