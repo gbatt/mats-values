@@ -1,0 +1,22 @@
+{
+ "rc1": {
+  "construct": "explicit_choice",
+  "note": "which one would you recommend (positive control / ceiling slope)"
+ },
+ "rc2": {
+  "construct": "random_pick",
+  "note": "settle something, casual"
+ },
+ "rc3": {
+  "construct": "random_pick",
+  "note": "settle a debate, don't factor in preferences"
+ },
+ "rc4": {
+  "construct": "random_pick",
+  "note": "break the tie, 100% random"
+ },
+ "rc5": {
+  "construct": "random_pick",
+  "note": "quick favour, mental coin"
+ }
+}
