@@ -1,7 +1,7 @@
 # mats-values
 
 Stated values, a value direction, and value leakage in gemma-4-31B-it: a
-20-hour MATS sprint project. The write-up is a separate document; this repo
+20-hour MATS sprint project. The [write-up](https://docs.google.com/document/d/1tKhBPpI23SiLZPaXNRperBm6cpPVcX8iLyy6F_mJFak/edit?tab=t.0#heading=h.75hogt563o22) is a separate document; this repo
 holds the data, the prompts and the executed notebook.
 
 - `stated-values.ipynb` — the whole experiment with outputs: stated values,
