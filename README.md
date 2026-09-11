@@ -18,5 +18,4 @@ holds the data, the prompts and the executed notebook.
 Experiment code is the generic library
 [interp-utils](https://github.com/gbatt/interp-utils) (prompts, splits,
 runner, probes, interventions, scoring, plots); GPU runs used its RunPod
-scripts and interp-engine on vLLM. `AGENTS.md` records the working rules used
-during the sprint.
+scripts and interp-engine on vLLM.
