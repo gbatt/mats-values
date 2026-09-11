@@ -15,7 +15,4 @@ holds the data, the prompts and the executed notebook.
 - `prompts/` — the five stated-value templates and the five random-choice
   templates, with per-template metadata (construct, cause position).
 
-Experiment code is the generic library
-[interp-utils](https://github.com/gbatt/interp-utils) (prompts, splits,
-runner, probes, interventions, scoring, plots); GPU runs used its RunPod
-scripts and interp-engine on vLLM.
+Experiment code is built on top of [interp-utils](https://github.com/gbatt/interp-utils)
